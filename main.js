@@ -3,42 +3,62 @@ const API_URL =
 
 const template = document.getElementById("row");
 const title = document.getElementById("title");
+const clock = document.getElementById("clock");
 const board = document.querySelector("#board tbody");
 
-let time = getCurrentTime();
-console.log(time);
+// Clock loop
+setInterval(renderClock, 1000);
+renderClock();
 
+// Departure table loop
 let departureData = await fetchDepartureData();
 renderDepartureTable(departureData);
+setInterval(async function dataLoop() {
+  departureData = await fetchDepartureData();
+  renderDepartureTable(departureData);
+}, 60000);
 
 // Calculating time
-function getCurrentTime() {
+function formatDate(date) {
   return new Date().toLocaleTimeString("de-CH", {
     hour: "2-digit",
     minute: "2-digit",
     second: "2-digit",
   });
 }
+
 function parseDateTimeString(str) {
   return new Date(str.replace(/([+-]\d{2})(\d{2})$/, "$1:$2"));
 }
 
 // Fetching data
 async function fetchDepartureData() {
-  const response = await fetch(API_URL);
+  //const response = await fetch(API_URL);
+  const response = await fetch("data.json");
   if (!response.ok)
     throw new Error("API could not be fetched, status " + response.status);
   return response.json();
 }
 
 // Displaying data
-function renderDepartureTable(departureData) {
-  const departureTitle = "Nächste Abfahrten ab " + departureData.station.name;
-  const now = Date.now();
+function renderClock() {
+  clock.innerText = formatDate(new Date());
+}
+
+function renderDepartureTitle(stationName) {
+  const departureTitle = "Nächste Abfahrten ab " + stationName;
   title.textContent = departureTitle;
   document.title = departureTitle;
+}
 
-  for (let departure of departureData.stationboard) {
+function renderDepartureTable(data) {
+  const now = Date.now();
+
+  renderDepartureTitle(data.station.name);
+
+  board.replaceChildren();
+
+  for (let departure of data.stationboard) {
     const row = template.content.cloneNode(true);
     const departureTime = parseDateTimeString(departure.stop.departure);
     let departureDelta = timeDelta(departureTime, now);
