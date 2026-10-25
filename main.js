@@ -25,11 +25,9 @@ function parseDateTimeString(str) {
 
 // Fetching data
 async function fetchDepartureData() {
-  const response = await fetch("data.json");
+  const response = await fetch(API_URL);
   if (!response.ok)
-    throw new Error(
-      "data.json could not be fetched, status " + response.status,
-    );
+    throw new Error("API could not be fetched, status " + response.status);
   return response.json();
 }
 
