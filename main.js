@@ -43,8 +43,13 @@ function renderDepartureTable(departureData) {
   for (let departure of departureData.stationboard) {
     const row = template.content.cloneNode(true);
     const departureTime = parseDateTimeString(departure.stop.departure);
-    const departureDelta = Math.floor((departureTime - now) / 60000);
-
+    let departureDelta = Math.floor((departureTime - now) / 60000);
+    let isDelayed = departure.stop.delay > 0;
+    console.log(departure.stop, departure.stop.delay);
+    if (isDelayed) {
+      row.querySelector("tr").classList.add("delayed");
+      departureDelta += "+" + departure.stop.delay;
+    }
     row.querySelector(".bus").textContent = departure.number;
     row.querySelector(".to").textContent = departure.to;
     row.querySelector(".departure").textContent = departureDelta + "′";
