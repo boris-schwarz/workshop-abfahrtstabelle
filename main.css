@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 2rem auto;
+    max-width: 40rem;
+    padding: 0 1rem;
+    color: #222;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+#clock {
+    font-variant-numeric: tabular-nums;
+    color: #666;
+}
+
+#board {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#board th,
+#board td {
+    padding: 0.6rem 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#board th {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #666;
+    border-bottom: 2px solid #ccc;
+}
+
+#board tbody tr:hover {
+    background: #f6f6f6;
+}
+
+#board .bus {
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+#board .departure {
+    text-align: right;
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+}
