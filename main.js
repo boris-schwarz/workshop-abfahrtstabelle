@@ -43,16 +43,25 @@ function renderDepartureTable(departureData) {
   for (let departure of departureData.stationboard) {
     const row = template.content.cloneNode(true);
     const departureTime = parseDateTimeString(departure.stop.departure);
-    let departureDelta = Math.floor((departureTime - now) / 60000);
+    let departureDelta = timeDelta(departureTime, now);
     let isDelayed = departure.stop.delay > 0;
-    console.log(departure.stop, departure.stop.delay);
+
     if (isDelayed) {
       row.querySelector("tr").classList.add("delayed");
       departureDelta += "+" + departure.stop.delay;
     }
     row.querySelector(".bus").textContent = departure.number;
     row.querySelector(".to").textContent = departure.to;
-    row.querySelector(".departure").textContent = departureDelta + "′";
+    row.querySelector(".departure").textContent = departureDelta;
     board.appendChild(row);
   }
+}
+
+function timeDelta(date1, date2) {
+  let delta = Math.floor((date1 - date2) / 60000);
+  if (delta > 60) {
+    delta = "> 60";
+  }
+  delta += "′";
+  return delta;
 }
