@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Nächste Abfahrten</title>
+    </head>
+    <body>
+        <header>
+            <h1 id="title">Nächste Abfahrten</h1>
+            <time id="clock"></time>
+        </header>
+
+        <table id="board">
+            <thead>
+                <tr>
+                    <th>Linie</th>
+                    <th>Ziel</th>
+                    <th>Abfahrt in</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <template id="row">
+            <tr>
+                <td class="bus"></td>
+                <td class="to"></td>
+                <td class="departure"></td>
+            </tr>
+        </template>
+    </body>
+</html>
