@@ -55,7 +55,6 @@ h1 {
 }
 
 #board .departure {
-    text-align: right;
     white-space: nowrap;
     font-variant-numeric: tabular-nums;
 }
