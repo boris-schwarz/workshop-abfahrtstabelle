@@ -38,7 +38,7 @@ function renderDepartureTable(departureData) {
   console.log(departureData);
   for (let departure of departureData.stationboard) {
     const row = template.content.cloneNode(true);
-    row.querySelector(".line").textContent = departure.number;
+    row.querySelector(".bus").textContent = departure.number;
     row.querySelector(".to").textContent = departure.to;
     row.querySelector(".departure").textContent = departure.stop.departure;
     board.appendChild(row);
