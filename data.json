@@ -7,8 +7,80 @@
       "category": "B",
       "number": "317",
       "stop": {
+        "delay": 0,
+        "departure": "2026-10-29T09:10:00+0100"
+      },
+      "to": "Schlieren, Zentrum/Bahnhof"
+    },
+    {
+      "category": "B",
+      "number": "317",
+      "stop": {
+        "delay": 0,
+        "departure": "2026-10-29T09:17:00+0100"
+      },
+      "to": "Urdorf Weihermatt, Bahnhof"
+    },
+    {
+      "category": "B",
+      "number": "317",
+      "stop": {
+        "delay": 0,
+        "departure": "2026-10-29T09:40:00+0100"
+      },
+      "to": "Schlieren, Zentrum/Bahnhof"
+    },
+    {
+      "category": "B",
+      "number": "317",
+      "stop": {
+        "delay": 0,
+        "departure": "2026-10-29T09:47:00+0100"
+      },
+      "to": "Urdorf Weihermatt, Bahnhof"
+    },
+    {
+      "category": "B",
+      "number": "317",
+      "stop": {
+        "delay": 0,
+        "departure": "2026-10-29T10:10:00+0100"
+      },
+      "to": "Schlieren, Zentrum/Bahnhof"
+    },
+    {
+      "category": "B",
+      "number": "317",
+      "stop": {
+        "delay": 0,
+        "departure": "2026-10-29T10:17:00+0100"
+      },
+      "to": "Urdorf Weihermatt, Bahnhof"
+    },
+    {
+      "category": "B",
+      "number": "317",
+      "stop": {
+        "delay": 0,
+        "departure": "2026-10-29T10:40:00+0100"
+      },
+      "to": "Schlieren, Zentrum/Bahnhof"
+    },
+    {
+      "category": "B",
+      "number": "317",
+      "stop": {
+        "delay": 0,
+        "departure": "2026-10-29T10:47:00+0100"
+      },
+      "to": "Urdorf Weihermatt, Bahnhof"
+    },
+    {
+      "category": "B",
+      "number": "317",
+      "stop": {
         "delay": 1,
-        "departure": "2026-10-29T16:10:00+0200"
+        "departure": "2026-10-29T11:10:00+0100"
       },
       "to": "Schlieren, Zentrum/Bahnhof"
     },
@@ -17,43 +89,7 @@
       "number": "317",
       "stop": {
         "delay": 0,
-        "departure": "2026-10-29T16:17:00+0200"
-      },
-      "to": "Urdorf Weihermatt, Bahnhof"
-    },
-    {
-      "category": "B",
-      "number": "317",
-      "stop": {
-        "delay": 0,
-        "departure": "2026-10-29T16:40:00+0200"
-      },
-      "to": "Schlieren, Zentrum/Bahnhof"
-    },
-    {
-      "category": "B",
-      "number": "317",
-      "stop": {
-        "delay": 0,
-        "departure": "2026-10-29T16:47:00+0200"
-      },
-      "to": "Urdorf Weihermatt, Bahnhof"
-    },
-    {
-      "category": "B",
-      "number": "317",
-      "stop": {
-        "delay": 0,
-        "departure": "2026-10-29T17:10:00+0200"
-      },
-      "to": "Schlieren, Zentrum/Bahnhof"
-    },
-    {
-      "category": "B",
-      "number": "317",
-      "stop": {
-        "delay": null,
-        "departure": "2026-10-29T17:17:00+0200"
+        "departure": "2026-10-29T11:17:00+0100"
       },
       "to": "Urdorf Weihermatt, Bahnhof"
     },
@@ -62,7 +98,7 @@
       "number": "317",
       "stop": {
         "delay": null,
-        "departure": "2026-10-29T17:40:00+0200"
+        "departure": "2026-10-29T11:40:00+0100"
       },
       "to": "Schlieren, Zentrum/Bahnhof"
     },
@@ -71,7 +107,7 @@
       "number": "317",
       "stop": {
         "delay": null,
-        "departure": "2026-10-29T17:47:00+0200"
+        "departure": "2026-10-29T11:47:00+0100"
       },
       "to": "Urdorf Weihermatt, Bahnhof"
     },
@@ -80,7 +116,7 @@
       "number": "317",
       "stop": {
         "delay": null,
-        "departure": "2026-10-29T18:10:00+0200"
+        "departure": "2026-10-29T12:10:00+0100"
       },
       "to": "Schlieren, Zentrum/Bahnhof"
     },
@@ -89,7 +125,7 @@
       "number": "317",
       "stop": {
         "delay": null,
-        "departure": "2026-10-29T18:17:00+0200"
+        "departure": "2026-10-29T12:17:00+0100"
       },
       "to": "Urdorf Weihermatt, Bahnhof"
     },
@@ -98,7 +134,7 @@
       "number": "317",
       "stop": {
         "delay": null,
-        "departure": "2026-10-29T18:40:00+0200"
+        "departure": "2026-10-29T12:40:00+0100"
       },
       "to": "Schlieren, Zentrum/Bahnhof"
     },
@@ -107,7 +143,7 @@
       "number": "317",
       "stop": {
         "delay": null,
-        "departure": "2026-10-29T18:47:00+0200"
+        "departure": "2026-10-29T12:47:00+0100"
       },
       "to": "Urdorf Weihermatt, Bahnhof"
     },
@@ -116,7 +152,7 @@
       "number": "317",
       "stop": {
         "delay": null,
-        "departure": "2026-10-29T19:10:00+0200"
+        "departure": "2026-10-29T13:10:00+0100"
       },
       "to": "Schlieren, Zentrum/Bahnhof"
     },
@@ -125,7 +161,7 @@
       "number": "317",
       "stop": {
         "delay": null,
-        "departure": "2026-10-29T19:16:00+0200"
+        "departure": "2026-10-29T13:17:00+0100"
       },
       "to": "Urdorf Weihermatt, Bahnhof"
     },
@@ -134,7 +170,7 @@
       "number": "317",
       "stop": {
         "delay": null,
-        "departure": "2026-10-29T19:40:00+0200"
+        "departure": "2026-10-29T13:40:00+0100"
       },
       "to": "Schlieren, Zentrum/Bahnhof"
     },
@@ -143,43 +179,7 @@
       "number": "317",
       "stop": {
         "delay": null,
-        "departure": "2026-10-29T19:46:00+0200"
-      },
-      "to": "Urdorf Weihermatt, Bahnhof"
-    },
-    {
-      "category": "B",
-      "number": "317",
-      "stop": {
-        "delay": null,
-        "departure": "2026-10-29T20:10:00+0200"
-      },
-      "to": "Schlieren, Zentrum/Bahnhof"
-    },
-    {
-      "category": "B",
-      "number": "317",
-      "stop": {
-        "delay": null,
-        "departure": "2026-10-29T20:16:00+0200"
-      },
-      "to": "Urdorf Weihermatt, Bahnhof"
-    },
-    {
-      "category": "B",
-      "number": "317",
-      "stop": {
-        "delay": null,
-        "departure": "2026-10-29T20:40:00+0200"
-      },
-      "to": "Schlieren, Zentrum/Bahnhof"
-    },
-    {
-      "category": "B",
-      "number": "317",
-      "stop": {
-        "delay": null,
-        "departure": "2026-10-29T20:46:00+0200"
+        "departure": "2026-10-29T13:47:00+0100"
       },
       "to": "Urdorf Weihermatt, Bahnhof"
     }
