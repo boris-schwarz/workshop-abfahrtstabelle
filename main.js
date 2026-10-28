@@ -20,6 +20,10 @@ function getCurrentTime() {
   });
 }
 
+function parseDateTimeString(str) {
+  return new Date(str.replace(/([+-]\d{2})(\d{2})$/, "$1:$2"));
+}
+
 // Fetching data
 async function fetchDepartureData() {
   const response = await fetch("data.json");
