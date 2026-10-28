@@ -49,6 +49,10 @@ h1 {
     background: #f6f6f6;
 }
 
+#board tbody tr.delayed {
+    color: #cc0000;
+}
+
 #board .bus {
     font-weight: 700;
     white-space: nowrap;
